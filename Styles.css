@@ -1,0 +1,211 @@
+@charset "utf-8";
+body, html {
+	font-style: normal;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	padding: 0%;
+	margin: 0%;
+	height: 100%;
+	background-color: #3088DC
+}
+		
+ copy and paste this section whenever you need to set up your colors for links  (just change colors) - can be used for each section/ID tag if necessary */
+
+a:link {
+    color: #F9A225;
+}
+
+a:visited {
+    color: #FF1556;
+}
+
+a:hover {
+	color: #99FF00;
+}
+a {
+	color: #E0A001
+}
+/* @group Blink */
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* @end */
+
+.rotate {
+
+  transform: rotate(-90deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+/* some random snippets used in the help videos - names tell you what they are used for */
+
+.imgleft {
+	float: left;
+	margin-right: 20px;
+}
+
+.imgright {
+	float: right;
+	margin-left: 20px;
+}
+
+
+.textcenter {
+	text-align: center;
+}
+
+.grborder{
+    border: 20px ridge #FF0000;
+    color: #000000;
+    font-style: normal;
+	   }
+.ggborder{
+	border: 20px groove #9BA815;
+	   }
+.boborder{
+	border: 20px outset #4C4ADB;
+	   }
+.wborder{
+	border: 20px inset #C8D1D1;
+}
+
+.gwborder{
+	border: 20px ridge #605E5E ;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+#wrapper {
+    min-height: 100%;
+    max-width: 1100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #E0A001;
+    font-style: normal;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    background-color: #3088DC;
+    text-align: center;
+}
+.progress {cursor: progress;}
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+/* gallery css */
+
+div.gallery {
+    margin: 10px 30px 20px 0;
+    border: 1px solid #fff;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;	
+	}
+
+
+
+
+/* you can use an empty div with the clearfix class to clear away floating problems you might be having - 2nd just shows you can add margins if you want.  For example, it might look like this   <div class="clearfix"></div>  or   <div class="clearfix-bmargin"></div>    */
+
+.clearfix {
+	clear:both;
+}
+
+.clearfix-bmargin {
+	clear:both;
+	margin-bottom: 40px;
+}

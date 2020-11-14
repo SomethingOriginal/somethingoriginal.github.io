@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sheba - The Simple One</title>
+<link href="Styles.css" rel="stylesheet" type="text/css">
+	
+</head>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+<body id="wrapper">
+<p class="ggborder">Vinnie Rementer Jr.</p>
+	<p> <a href="winter.html">Winter, She Who Endures</a> | <a href="lucia.html">Lucia, She Who Guards</a></p>
+<div class="container boborder">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <a href="sheba1.jpg"><img src="sheba1sm.jpg" class="grborder"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <a href="sheba2.jpg"><img src="sheba2sm.jpg" class="grborder"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <a href="sheba3.jpg"><img src="sheba3sm.jpg" class="grborder"></a>
+  </div>
+  <p><a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </p>
+  <p>This Is <strong>Sheba. </strong>We got her almost 6 years ago now and she is the friendliest cat to me, and the fattest.</p>
+	<p>I love her the most out of our three cats and I hope she continues to ease herself through life in her easy-going way. </p>
+	<p>Though, there are times I wish she used her actual strength against the other cats. She used to be an outside cat too!</p>
+</div>
+	
+</body>
+	<footer><nav class="textcenter">
+    <p> <a href="index.html">HOME</a> | <a href="outdated.html">Outdated</a> | <a href="cats.html">My Cats</a> | <a href="guestbook.html">Guestbook</a></p>
+</nav></footer>
+</html>
