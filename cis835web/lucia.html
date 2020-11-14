@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lucia - The On-Off One</title>
+<link href="Styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+</head>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+<body id="wrapper">
+<p class="ggborder">Vinnie Rementer Jr.</p>
+	<p> <a href="winter.html">Winter, She Who Endures</a> | <a href="sheba.html">Sheba, She Who Loves</a></p>
+<div class="container gwborder">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <a href="lucia1.jpg"><img src="lucia1sm.jpg" class="grborder"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <a href="lucia2.jpg"><img src="lucia2sm.jpg" class="grborder"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <a href="lucia3.jpg"><img src="lucia3sm.jpg" class="grborder"></a>
+  </div>
+  <p><a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </p>
+  <p>This Is <strong>Lucia. </strong>She's about 9 years old now. We got her from my sister's friend Chelsea. </p>
+	<p>She's part Norwegian Forest Cat part Tabby. She gets along best with my mom and has been friendly to my dad. She can hate me, however </p>
+	<p>Lucia and I have a weird relationship. She's sometimes nice and that's sublime. She's 2nd fattest and is generally the smartest cat in the house. She prefers running water so much, she actually licks the basement faucet. Aw well, I love her.</p>
+</div>
+	
+</body>
+	<footer><nav class="textcenter">
+    <p> <a href="index.html">HOME</a> | <a href="outdated.html">Outdated</a> | <a href="cats.html">My Cats</a> | <a href="guestbook.html">Guestbook</a></p>
+</nav></footer>
+</html>
